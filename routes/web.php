@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// 1 parametro: la radice dell'URL , 2 parametro: quale controller gestisce la crud
+Route::resource('/students' , 'StudentController');
